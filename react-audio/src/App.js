@@ -44,7 +44,10 @@ const App = () => {
 
     return (
         <section>
+            {/* This song src can be replaced with your own song */}
             <audio ref={audio} id="audio" src={song} loop={isLoop} />
+
+            {/* The max time can be set by user song's duration */}
             <input
                 value={rangeValue}
                 ref={range}
